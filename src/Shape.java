@@ -1,4 +1,26 @@
-package PACKAGE_NAME;
+public abstract class Shape {
+    protected String color;
+    protected double height;
+    protected double width;
+    protected double base;
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public void setHeight(double height) {
+        this.height = height;
+    }
+    public void setWidth(double width) {
+        this.width = width;
+    }
+    public void setBase(double base) {
+        this.base = base;
+    }
+    public abstract double getArea();
 
-public class Shape {
+    public String toString() {
+        return"Shape[color=" + color + "]";
+    }
+    public void displayshapName(){
+    System.out.println("I am a shape");
+    }
 }
